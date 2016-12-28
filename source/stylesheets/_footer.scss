@@ -1,0 +1,9 @@
+footer {
+  @include make-row;
+  text-align: center;
+  margin-top: 85px;
+
+  .footer-block {
+    @include make-xs-column(12);
+  }
+}

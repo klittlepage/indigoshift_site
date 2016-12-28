@@ -1,0 +1,48 @@
+{
+  "name": "indigo_shift",
+  "version": "1.0.0",
+  "description": "indigoShift LLC website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klittlepage/indigoshift_site.git"
+  },
+  "author": "Kelly Littlepage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klittlepage/indigo_shift/issues"
+  },
+  "homepage": "https://github.com/klittlepage/indigo_shift#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "clean-webpack-plugin": "^0.1.14",
+    "css-loader": "^0.26.1",
+    "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "fg-loadcss": "^1.2.0",
+    "file-loader": "^0.9.0",
+    "font-awesome": "^4.7.0",
+    "font-awesome-webpack": "0.0.4",
+    "imports-loader": "^0.7.0",
+    "jquery": "^3.1.1",
+    "less": "^2.7.1",
+    "node-sass": "^4.1.1",
+    "postcss-loader": "^1.2.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-manifest-plugin": "^1.1.0"
+  }
+}

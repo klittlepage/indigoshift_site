@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <% if current_page.data.title %>
+    <title><%= "#{current_page.data.title} | indigoShift llc" %></title>
+    <% else %>
+    <title>indigoShift</title>
+    <% end %>
+    <% if build? %>
+    <style><%= File.read(File.join('build', webpack_asset_path('site.css'))) %></style>
+    <% else %>
+    <%= stylesheet_link_tag webpack_asset_path('site.css') %>
+    <% end %>
+
+    <% if content_for?(:canonical_link) %>
+    <%= yield_content :canonical_link %>
+    <% else %>
+    <link rel="canonical" href="<%= URI.join(host, current_page.url).to_s %>"/>
+    <% end %>
+  </head>
+
+  <body class="<%= current_page.data.page_class %>">
+    <%= yield %>
+    <% if build? %>
+    <script async type="application/javascript"><%= File.read(File.join('build', webpack_asset_path('site.js'))) %></script>
+    <% else %>
+    <%= javascript_include_tag webpack_asset_path('site.js') %>
+    <% end %>
+  </body>
+</html>

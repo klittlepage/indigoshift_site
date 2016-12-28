@@ -1,0 +1,43 @@
+.is-navbar-container {
+  @include container-fixed;
+}
+
+.navbar {
+  color: $text-color-primary;
+  background-color: $color-primary-0;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: $text-color-primary;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-style: none;
+}
+
+.navbar-default .navbar-collapse {
+  border-top:none;
+  box-shadow:none;
+}
+
+.navbar-brand {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $text-color-primary;
+  margin-top: 5px;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand {
+  &:hover, &:focus {
+    color: $text-color-link-hov;
+  }
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a {
+  color: $text-color-primary;
+  &:hover, &:focus {
+    color: $text-color-link-hov;
+  }
+}
